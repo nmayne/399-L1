@@ -5,7 +5,7 @@ import lejos.hardware.port.MotorPort;
 import lejos.utility.Delay;
 import lejos.hardware.motor.UnregulatedMotor;
 
-public class j_rect {
+public class J_rect {
 	public static void main(String[] args) {
 		UnregulatedMotor RM = new UnregulatedMotor(MotorPort.A);
 		UnregulatedMotor LM = new UnregulatedMotor(MotorPort.D);

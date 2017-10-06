@@ -12,7 +12,7 @@ package L1;
 	import lejos.hardware.sensor.SensorMode;
 	import lejos.utility.Delay;
 
-	public class aggression {
+	public class Aggression {
 		EV3ColorSensor LCS = new EV3ColorSensor(SensorPort.S4); // left sensor
 		EV3ColorSensor RCS = new EV3ColorSensor(SensorPort.S1); // right sensor
 		public static SensorMode leftSensor; 
@@ -80,7 +80,7 @@ package L1;
 
 		public static void main(String[] args){
 			// initialize robot
-			aggression robot = new aggression();
+			Aggression robot = new Aggression();
 			Delay.msDelay(1000);
 			for(int i = 0; i < 2; i++){ 
 				motor[i].setPower(30);

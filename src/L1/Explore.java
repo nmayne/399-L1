@@ -14,7 +14,7 @@ import lejos.hardware.sensor.EV3UltrasonicSensor;
 import lejos.robotics.SampleProvider;
 import lejos.utility.Delay;
 
-public class explore {
+public class Explore {
 	static EV3UltrasonicSensor LUS = new EV3UltrasonicSensor(SensorPort.S4);	// Robot frame x-axis distance
 	static EV3UltrasonicSensor RUS = new EV3UltrasonicSensor(SensorPort.S1);	// Robot frame x-axis distance
 	public static SampleProvider leftSensor; 
@@ -57,7 +57,7 @@ public class explore {
     }
 	public static void main(String[] args){
 		// initialize robot
-		explore robot = new explore();
+		Explore robot = new Explore();
 		
 		Delay.msDelay(1000);
 		for(int i = 0; i < 2; i++){ 

@@ -12,7 +12,7 @@ import lejos.hardware.sensor.EV3ColorSensor;
 import lejos.hardware.sensor.SensorMode;
 import lejos.utility.Delay;
 
-public class cowardice {
+public class Cowardice {
 	EV3ColorSensor LCS = new EV3ColorSensor(SensorPort.S4); // left sensor
 	EV3ColorSensor RCS = new EV3ColorSensor(SensorPort.S1); // right sensor
 	public static SensorMode leftSensor; 
@@ -68,7 +68,7 @@ public class cowardice {
     }
 	public static void main(String[] args){
 		// initialize robot
-		cowardice robot = new cowardice();
+		Cowardice robot = new Cowardice();
 		Delay.msDelay(1000);
 		for(int i = 0; i < 2; i++){ 
 			motor[i].setPower(30);

@@ -11,7 +11,7 @@ import lejos.hardware.sensor.EV3ColorSensor;
 import lejos.hardware.sensor.SensorMode;
 import lejos.utility.Delay;
 
-public class love {
+public class Love {
 	EV3ColorSensor LCS = new EV3ColorSensor(SensorPort.S4); // left sensor
 	EV3ColorSensor RCS = new EV3ColorSensor(SensorPort.S1); // right sensor
 	public static SensorMode leftSensor; 
@@ -71,7 +71,7 @@ public class love {
     }
 	public static void main(String[] args){
 		// initialize robot
-		love robot = new love();
+		Love robot = new Love();
 		Delay.msDelay(1000);
 		for(int i = 0; i < 2; i++){ 
 			motor[i].setPower(30);
